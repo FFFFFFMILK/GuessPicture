@@ -13,6 +13,9 @@
 		87F39CA91F21AF1D008DDAEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F39CA71F21AF1D008DDAEC /* Main.storyboard */; };
 		87F39CAB1F21AF1D008DDAEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87F39CAA1F21AF1D008DDAEC /* Assets.xcassets */; };
 		87F39CAE1F21AF1D008DDAEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F39CAC1F21AF1D008DDAEC /* LaunchScreen.storyboard */; };
+		87F39CB61F21AFD5008DDAEC /* questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87F39CB51F21AFD5008DDAEC /* questions.plist */; };
+		87F39CB91F21BCF5008DDAEC /* OptionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F39CB81F21BCF5008DDAEC /* OptionModel.m */; };
+		87F39CBC1F22E658008DDAEC /* OptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F39CBB1F22E658008DDAEC /* OptionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		87F39CAA1F21AF1D008DDAEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87F39CAD1F21AF1D008DDAEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87F39CAF1F21AF1D008DDAEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87F39CB51F21AFD5008DDAEC /* questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = questions.plist; sourceTree = "<group>"; };
+		87F39CB71F21BCF5008DDAEC /* OptionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionModel.h; sourceTree = "<group>"; };
+		87F39CB81F21BCF5008DDAEC /* OptionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionModel.m; sourceTree = "<group>"; };
+		87F39CBA1F22E658008DDAEC /* OptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionView.h; sourceTree = "<group>"; };
+		87F39CBB1F22E658008DDAEC /* OptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +70,10 @@
 				87F39CA21F21AF1D008DDAEC /* AppDelegate.m */,
 				87F39CA41F21AF1D008DDAEC /* ViewController.h */,
 				87F39CA51F21AF1D008DDAEC /* ViewController.m */,
-				87F39CA71F21AF1D008DDAEC /* Main.storyboard */,
-				87F39CAA1F21AF1D008DDAEC /* Assets.xcassets */,
-				87F39CAC1F21AF1D008DDAEC /* LaunchScreen.storyboard */,
-				87F39CAF1F21AF1D008DDAEC /* Info.plist */,
+				87F39CBA1F22E658008DDAEC /* OptionView.h */,
+				87F39CBB1F22E658008DDAEC /* OptionView.m */,
+				87F39CB71F21BCF5008DDAEC /* OptionModel.h */,
+				87F39CB81F21BCF5008DDAEC /* OptionModel.m */,
 				87F39C9E1F21AF1D008DDAEC /* Supporting Files */,
 			);
 			path = GuessPicture;
@@ -74,6 +82,11 @@
 		87F39C9E1F21AF1D008DDAEC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				87F39CA71F21AF1D008DDAEC /* Main.storyboard */,
+				87F39CAC1F21AF1D008DDAEC /* LaunchScreen.storyboard */,
+				87F39CAF1F21AF1D008DDAEC /* Info.plist */,
+				87F39CB51F21AFD5008DDAEC /* questions.plist */,
+				87F39CAA1F21AF1D008DDAEC /* Assets.xcassets */,
 				87F39C9F1F21AF1D008DDAEC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87F39CB61F21AFD5008DDAEC /* questions.plist in Resources */,
 				87F39CAE1F21AF1D008DDAEC /* LaunchScreen.storyboard in Resources */,
 				87F39CAB1F21AF1D008DDAEC /* Assets.xcassets in Resources */,
 				87F39CA91F21AF1D008DDAEC /* Main.storyboard in Resources */,
@@ -153,6 +167,8 @@
 			files = (
 				87F39CA61F21AF1D008DDAEC /* ViewController.m in Sources */,
 				87F39CA31F21AF1D008DDAEC /* AppDelegate.m in Sources */,
+				87F39CB91F21BCF5008DDAEC /* OptionModel.m in Sources */,
+				87F39CBC1F22E658008DDAEC /* OptionView.m in Sources */,
 				87F39CA01F21AF1D008DDAEC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = BBUT5W56EH;
 				INFOPLIST_FILE = GuessPicture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -287,6 +304,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = BBUT5W56EH;
 				INFOPLIST_FILE = GuessPicture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
